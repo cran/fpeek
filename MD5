@@ -1,6 +1,7 @@
-6fbe774e1333e624586d8934dd244e31 *DESCRIPTION
+031d0bef035cdf72cce92ae517da4905 *DESCRIPTION
 53c241613729a38bd453f1c327a4fd9e *LICENSE
 a05d276448e3be57d0ceed4e551c1155 *NAMESPACE
+9071d074452466b38f70963b46134f71 *NEWS.md
 2be4ea568abef7762f720ad6ed7bc0e8 *R/RcppExports.R
 660d1a2836a9ebea9e80971bf32cab95 *R/funs.R
 f133811b34991e287e3bc9a82209fea8 *README.md
@@ -15,5 +16,5 @@ cee734e1ca7ffe8164b4859c00aea82e *inst/medias/fpeek.svg
 4be91cfdc55df299ec2708d3cd060c24 *src/fpeek.cpp
 3d3cb6baccd35c93acef2abe0b219d43 *tests/testthat.R
 f57c1611a76bbee1eb81686e1243ea53 *tests/testthat/test-headtail.R
-a0471234e1c1d9efbbf4498c6ff60b3b *tests/testthat/test-iconv.R
+38131af8bbe34991170d91421b279d88 *tests/testthat/test-iconv.R
 0146f4d8c09a185886f07a6d7aea574c *tests/testthat/test-wcl.R
