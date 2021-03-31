@@ -1,13 +1,14 @@
-031d0bef035cdf72cce92ae517da4905 *DESCRIPTION
+ba8456ecad7496f37c12ee2af881559c *DESCRIPTION
 53c241613729a38bd453f1c327a4fd9e *LICENSE
 a05d276448e3be57d0ceed4e551c1155 *NAMESPACE
-9071d074452466b38f70963b46134f71 *NEWS.md
+85f698f2b62250a7fc51d5ef38ad0873 *NEWS.md
 2be4ea568abef7762f720ad6ed7bc0e8 *R/RcppExports.R
 660d1a2836a9ebea9e80971bf32cab95 *R/funs.R
-f133811b34991e287e3bc9a82209fea8 *README.md
+b0c10f576f56561d4f0f0bf22bd5c350 *README.md
 e4fcb1544193a22a941ca2393d36906a *inst/datafiles/ISO-8859-1.txt
 0788e3fc27f144b4fc39c432b0856122 *inst/datafiles/cigfou-ISO-8859-1.txt
 cee734e1ca7ffe8164b4859c00aea82e *inst/medias/fpeek.svg
+159ac0ebc0e6ac5dc859cd43ab012b18 *man/figures/logo.png
 583eab01a10024acd8210b03c5c9b189 *man/peek_count_lines.Rd
 87da936a674c821a3c599ba5646dd19d *man/peek_head.Rd
 61658ea9ec52996b0ce2c9e8d81fad82 *man/peek_iconv.Rd
