@@ -11,9 +11,9 @@
 #' @return number of lines as an integer
 #' @examples
 #' f <- system.file(package = "fpeek",
-#'   "datafiles", "cigfou-ISO-8859-1.txt")
+#'   "datafiles", "test-tab.csv")
 #' peek_count_lines(f)
-peek_count_lines <- function(path, with_eof = FALSE ) {
+peek_count_lines <- function(path, with_eof = FALSE) {
   nlines_(path, with_eof = with_eof)
 }
 
@@ -29,12 +29,15 @@ peek_count_lines <- function(path, with_eof = FALSE ) {
 #' in the R console.
 #' @examples
 #' f <- system.file(package = "fpeek",
-#'   "datafiles", "cigfou-ISO-8859-1.txt")
+#'   "datafiles", "test-tab.csv")
 #' peek_head(f, n = 4)
 #' peek_head(f, n = 4, intern = TRUE)
 peek_head <- function(path, n = 10, intern = FALSE) {
-  if( !intern ) head_print_(path, n)
-  else head_str_(path, n)
+  if (!intern) {
+    head_print_(path, n)
+  } else {
+    head_str_(path, n)
+  }
 }
 
 
@@ -45,12 +48,15 @@ peek_head <- function(path, n = 10, intern = FALSE) {
 #' @inheritParams peek_head
 #' @examples
 #' f <- system.file(package = "fpeek",
-#'   "datafiles", "cigfou-ISO-8859-1.txt")
+#'   "datafiles", "test-tab.csv")
 #' peek_tail(f, n = 4)
 #' peek_tail(f, n = 4, intern = TRUE)
 peek_tail <- function(path, n = 10, intern = FALSE) {
-  if( !intern ) tail_print_(path, n)
-  else tail_str_(path, n)
+  if (!intern) {
+    tail_print_(path, n)
+  } else {
+    tail_str_(path, n)
+  }
 }
 
 
@@ -70,7 +76,6 @@ peek_tail <- function(path, n = 10, intern = FALSE) {
 #' la_cigale <- system.file(package = "fpeek", "datafiles",
 #'   "cigfou-ISO-8859-1.txt")
 #'
-#' peek_head(la_cigale)
 #' peek_iconv(la_cigale, from = "ISO-8859-1", to = "UTF-8")
 #'
 #' newfile <- tempfile()
@@ -79,18 +84,14 @@ peek_tail <- function(path, n = 10, intern = FALSE) {
 #' peek_head(newfile, n = 10)
 #'
 peek_iconv <- function(path, from, to = "UTF-8", newfile = NULL) {
-  if( is.null(newfile) ){
-    file_iconv_(path, from, to )
+  if (is.null(newfile)) {
+    file_iconv_(path, from, to)
   } else {
-    file_con <- file( newfile, open = "wt", encoding = to)
+    file_con <- file(newfile, open = "wt", encoding = to)
     sink(file = file_con)
-    file_iconv_(path, from, to )
+    file_iconv_(path, from, to)
     sink()
     close(file_con)
     newfile
   }
-
 }
-
-
-
