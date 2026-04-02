@@ -1,7 +1,7 @@
 Type: Package
 Package: fpeek
 Title: Check Text Files Content at a Glance
-Version: 0.2.0
+Version: 0.2.1
 Authors@R: 
     person("David", "Gohel", , "david.gohel@ardata.fr", role = c("aut", "cre"))
 Description: Tools to help text files importation. It can return the
@@ -21,8 +21,8 @@ LinkingTo: Rcpp
 Encoding: UTF-8
 RoxygenNote: 7.3.3
 NeedsCompilation: yes
-Packaged: 2026-02-09 10:53:52 UTC; davidgohel
+Packaged: 2026-04-02 13:43:22 UTC; davidgohel
 Author: David Gohel [aut, cre]
 Maintainer: David Gohel <david.gohel@ardata.fr>
 Repository: CRAN
-Date/Publication: 2026-02-09 11:10:02 UTC
+Date/Publication: 2026-04-02 14:40:02 UTC
